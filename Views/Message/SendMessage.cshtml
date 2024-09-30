@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Enviar Mensaje de WhatsApp";
+}
+
+<h1>Enviar Mensaje de WhatsApp</h1>
+
+<form asp-action="SendWhatsAppMessage" method="post">
+    <div>
+        <label for="phoneNumber">Número de Teléfono (con código de país):</label>
+        <input type="text" name="phoneNumber" required placeholder="Ej: 59171234567" />
+    </div>
+
+    <div>
+        <label for="messageBody">Mensaje:</label>
+        <textarea name="messageBody" required placeholder="Escribe tu mensaje aquí"></textarea>
+    </div>
+
+    <button type="submit">Enviar Mensaje</button>
+</form>
